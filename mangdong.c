@@ -11,7 +11,7 @@ int main()
     ptr = (int*)malloc((m*n) * sizeof(int));
 
     for(int i=0; i<(m*n); i++) {
-        printf("nhập giá trị hàng %d cột %d: ", i/m,i%n);
+        printf("nhập giá trị hàng %d cột %d: ", i/n,i%n);
         scanf("%d",(ptr+i));
 
     }
