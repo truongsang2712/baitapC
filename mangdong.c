@@ -8,6 +8,7 @@ int main()
     scanf("%d", &m);
     printf("nhập số cột của ma trận: ");
     scanf("%d", &n);
+    
     ptr = (int*)malloc((m*n) * sizeof(int));
 
     for(int i=0; i<(m*n); i++) {
@@ -18,4 +19,6 @@ int main()
     for(int i=0; i<m*n; i++) {
         printf("phần tử thứ %d là: %d \n",i, (*(ptr+i)));
     }
+    
+    free(ptr);
 }
